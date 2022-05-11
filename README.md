@@ -1,2 +1,2 @@
-# hackerRank_problems
+# HackerRank Problems
 Collection of hackerRank questions
