@@ -1,4 +1,4 @@
-var solution = function (isBadVersion) {
+var algo_1 = function (isBadVersion) {
   /**
    * @param {integer} n Total versions
    * @return {integer} The first bad version
@@ -17,4 +17,22 @@ var solution = function (isBadVersion) {
     return min; // return the first bad version
   };
 };
-module.exports = solution;
+var algo_2 = function (isBadVersion) {
+  /**
+   * @param {integer} n Total versions
+   * @return {integer} The first bad version
+   */
+  return function (n) {
+    let min = 1,
+      max = maxNum;
+
+    while (min <= max) {
+      const mid = Math.floor((min + max) / 2);
+
+      if (isBadVersion(mid)) return mid;
+      else if (isBadVersion(mid)) max = mid - 1;
+      else min = mid + 1;
+    }
+  };
+};
+module.exports = { algo_1, algo_2 };
