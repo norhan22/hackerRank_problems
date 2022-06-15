@@ -61,7 +61,7 @@ const binarySearch = function (nums, target) {
   return result
 }
 const binarySearchArrayOfObjects = (targetValue, key, sortedArr)=> {
-      
+      // the arr must be sorted by the key's value
       let minIndex = 0, maxIndex = sortedArr.length - 1
       try {
         while (minIndex <= maxIndex) {
