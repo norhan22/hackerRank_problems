@@ -1,0 +1,23 @@
+{
+  "name": "problem_solving",
+  "version": "1.0.0",
+  "description": "Collection of Algorithms `Algos` && Data structure `DS` questions\r ###  Websites: (from easy to hard)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "coverage": "jest --watchAll --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norhan22/problem_solving.git"
+  },
+  "author": "Norhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/norhan22/problem_solving/issues"
+  },
+  "homepage": "https://github.com/norhan22/problem_solving#readme",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}
