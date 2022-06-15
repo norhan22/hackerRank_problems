@@ -8,7 +8,7 @@
  * Since each version is developed based on the previous version, all the versions after a bad version are also bad.
 
   */
- /**
+ /*
   * Definition for isBadVersion()
   *
   * @param {integer} version number
