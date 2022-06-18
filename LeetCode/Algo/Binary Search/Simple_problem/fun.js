@@ -45,20 +45,25 @@ const binarySearch = function (nums, target) {
 
   return result;
 };
-const binarySearchArrayOfObjects = (targetValue, key, sortedArr) => {
+const binarySearchArrayOfObjects = (targetValue, key, arr) => {
   // the arr must be sorted by the key's value
+  arr = arr.sort((a, b) => a[key] - b[key]);
+  console.log(arr);
   let minIndex = 0,
-    maxIndex = sortedArr.length - 1;
+    maxIndex = arr.length - 1;
   try {
     while (minIndex <= maxIndex) {
-      const midIndex = Math.floor((minIndex + maxIndex) / 2),
-        geuss = arr[midIndex];
-      if (geuss[key] === targetValue) return geuss;
-      else if (geuss[key] > targetValue) maxIndex = midIndex - 1;
+      let midIndex = Math.floor((minIndex + maxIndex) / 2),
+        guess = arr[midIndex];
+
+      if (guess[key] === targetValue) return guess;
+      else if (guess[key] > targetValue) maxIndex = midIndex - 1;
       else minIndex = midIndex + 1;
     }
+    return -1;
   } catch (err) {
-    console.log("binarySearchArrayOfObjects", err);
+    console.log("getSingleData", err);
+    return -1;
   }
 };
 
