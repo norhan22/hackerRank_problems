@@ -1,6 +1,6 @@
 const fun = require("./fun.js");
 
-describe("Peak Index in a Mountain Array", function () {
+describe("852. Peak Index in a Mountain Array", function () {
   //////////////////////
   // Function
   //////////////////////
