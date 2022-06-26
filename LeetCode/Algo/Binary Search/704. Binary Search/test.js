@@ -1,6 +1,6 @@
 const fun = require("./fun.js");
 
-describe.only("test Binary Search in Array of Objects", function () {
+describe("test Binary Search in Array of Objects", function () {
   /////////////////////////////
   // Function
   /////////////////////////////

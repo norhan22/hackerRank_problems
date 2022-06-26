@@ -1,6 +1,6 @@
 const fun = require("./fun.js");
 
-describe("69. Sqrt(x)", function () {
+describe.skip("69. Sqrt(x)", function () {
   /////////////////
   // Function
   /////////////////
